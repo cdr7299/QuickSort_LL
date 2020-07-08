@@ -121,10 +121,7 @@ void Sortable_list<Record>::recursive_quick_sort(Node<Record> *&sub_list, Node<R
 
 template <class Record>
 void Sortable_list<Record>::quick_sort()
-/*
-Post: The entries of the Sortable_list have been rearranged so that
-      the keys in all the entries are sorted into nondecreasing order.
-*/
+
 {
 	Node<Record> *tail = this->head;
 	while (tail->next != nullptr)
